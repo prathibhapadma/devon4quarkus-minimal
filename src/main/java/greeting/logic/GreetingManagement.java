@@ -8,12 +8,23 @@ import javax.enterprise.context.ApplicationScoped;
 @ApplicationScoped
 public class GreetingManagement {
 
+  /**
+   * Returns the String "Hello world!".
+   *
+   * @return The String "Hello world!".
+   */
   public String greetingHello() {
 
     return "Hello World!";
   }
 
-  public String greeting(String name) {
+  /**
+   * Return the String "Hello <<name>>!".
+   *
+   * @param name The name to greet.
+   * @return The String "Hello <<name>>!".
+   */
+  public String greetingHelloName(String name) {
 
     return "Hello " + name + "!";
   }

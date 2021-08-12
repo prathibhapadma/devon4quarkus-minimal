@@ -14,14 +14,16 @@ import greeting.logic.GreetingManagement;
  * Greeting REST endpoint.
  *
  */
-@Path("/hello")
-public class GreetingService {
+@Path("/greeting")
+public class GreetingRestService {
 
   @Inject
   GreetingManagement greetingService;
 
   /**
-   * {@InheritDoc}
+   * Returns the String "Hello world!".
+   *
+   * @return The String "Hello world!".
    */
   @GET
   @Produces(MediaType.TEXT_PLAIN)
@@ -31,14 +33,17 @@ public class GreetingService {
   }
 
   /**
-   * {@InheritDoc}
+   * Return the String "Hello <<name>>!".
+   *
+   * @param name The name to greet.
+   * @return The String "Hello <<name>>!".
    */
   @GET
   @Produces(MediaType.TEXT_PLAIN)
-  @Path("/greeting/{name}")
+  @Path("/{name}")
   public String greeting(@PathParam String name) {
 
-    return this.greetingService.greeting(name);
+    return this.greetingService.greetingHelloName(name);
   }
 
 }
