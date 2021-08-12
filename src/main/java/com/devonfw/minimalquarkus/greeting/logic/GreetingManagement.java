@@ -1,4 +1,4 @@
-package greeting.logic;
+package com.devonfw.minimalquarkus.greeting.logic;
 
 import javax.enterprise.context.ApplicationScoped;
 

@@ -1,4 +1,4 @@
-package greeting.service;
+package com.devonfw.minimalquarkus.greeting.service;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
@@ -8,7 +8,7 @@ import javax.ws.rs.core.MediaType;
 
 import org.jboss.resteasy.annotations.jaxrs.PathParam;
 
-import greeting.logic.GreetingManagement;
+import com.devonfw.minimalquarkus.greeting.logic.GreetingManagement;
 
 /**
  * Greeting REST endpoint.
