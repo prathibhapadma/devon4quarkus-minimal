@@ -9,11 +9,11 @@ You can run your application in dev mode using: `shell script ./mvnw compile qua
 
 ## Access your REST endpoint
 
-curl -w "\n" http://localhost:8080/greeting/{name}
+`curl -w "\n" http://localhost:8080/greeting/{name} `
 
 or
 
-curl -w "\n" http://localhost:8080/greeting
+`curl -w "\n" http://localhost:8080/greeting `
 
 ## Running tests
 
